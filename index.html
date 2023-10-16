@@ -1,11 +1,79 @@
 <!DOCTYPE html>
-<html lang="esgit commit -m "first commit"">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro y Analisis de Gastos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Space+Grotesk:wght@300&display=swap" rel="stylesheet">
+    <title>Registro y cálculo de gastos</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <aside>
+        <div id="sueldo">
+            <label for="salario">Salario:</label>
+            <input type="number" name="salario" id="salario" placeholder="€">            
+        </div>
+        <div class="numeroMeses">
+            <label for="numeroMeses">Número de meses:</label>
+            <select name="numeroMeses" id="numeroMeses">
+                <option value="1">2 mes</option>
+                <option value="2">3 meses </option>
+                <option value="3">4 meses</option>
+                <option value="4">5 meses</option>
+                <option value="5">6 meses</option>
+            </select>
+        </div>
+        <div class="instructions">
+            <h3>Instrucciones:</h3>
+            <p>En el campo  <i>"Salario"</i> ingresa el valor de tu salario mensual
+                y, luego, en el campo el  <i>"Número de meses"</i>. Después ingresa la cantidad de meses
+                que deseas promediar.</p>
+        </div>
+    </aside>
+    <main>
+        <div class="mainTitle">----- Registro Mes por Mes -----</div>
+        <div class="contenedorMeses">
+            <div class="initial-month">
+                <label id="labelMes" for="mes">Mes inicial:</label>
+                <input type="month" id="mes">         
+                <label for="vivienda">Vivienda:</label>
+                <input type="number" class="inputGasto" id="vivienda" placeholder="€">
+                <label for="alimentacion">Alimentación:</label>
+                <input type="number" class="inputGasto" id="alimentacion" placeholder="€">
+                <label for="ocio">Ocio:</label>
+                <input type="number" class="inputGasto" id="ocio" placeholder="€">
+                <label for="ahorro">Ahorro:</label>
+                <input type="number" class="inputGasto" id="ahorro" placeholder="€">
+            </div>
+            <div id="contenedorMesesGenerados"></div>
+            <div class="added-month-original" style="display: none;">
+                <div class="added-month-name">Nombre Mes</div>
+                <div class="year">Año</div>
+                <label for="vivienda">Vivienda:</label>
+                <input type="number" class="inputGasto" id="vivienda" placeholder="€">
+                <label for="alimentacion">Alimentación:</label>
+                <input type="number" class="inputGasto" id="alimentacion" placeholder="€">
+                <label for="ocio">Ocio:</label>
+                <input type="number" class="inputGasto" id="ocio" placeholder="€">
+                <label for="ahorro">Ahorro:</label>
+                <input type="number" class="inputGasto" id="ahorro" placeholder="€">
+        </div>
+    </main>
+    <aside>
+        <div class="resultado">
+            <h3>
+                Resultados
+            </h3>
+            <ul>
+                <li>En promedio los gastos corresponde a un <span>number</span>% de tu salario</li>
+                <li>El Gasto mas Representativo es <span>gasto</span></li>
+                <li>Hasta el momento has ahorrado <span>number</span></li>
+                <li>Mensualmente ahorras una media de<span>number</span>% de tu salario</li>
+            </ul>
+        </div>
+    </aside>
 </body>
+<script src="/scripts.js"></script>
 </html>

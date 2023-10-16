@@ -1,0 +1,53 @@
+/* ----    Estilos Generales    ---- */
+
+
+:root {
+    --black: #110101;
+    --white: #FFFAE1;
+    --blue: #BDEBFC;
+    --green: #99FF99;
+    --orange: #F4D35E;
+    --red: #F78764;
+  }
+  
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  html {
+    font-size: 1.6rem;
+    padding: 60px;
+    font-family: 'PT Sans', sans-serif;
+    color: var(--white);
+    background-color: var(--black);
+  }
+  
+  body {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 5px; /* Ancho de la barra de desplazamiento */
+  
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #110101;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color:rgb(153, 255, 153, 0.2);
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: var(--green);
+    }
+  ::-webkit-menu-item:hover {
+      background: var(--white);
+    }

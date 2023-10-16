@@ -52,13 +52,13 @@
                 <div class="added-month-name">Nombre Mes</div>
                 <div class="year">Año</div>
                 <label for="vivienda">Vivienda:</label>
-                <input type="number" class="inputGasto" id="vivienda" placeholder="€">
+                <input type="number" class="inputGasto" id="vivienda-clon" placeholder="€">
                 <label for="alimentacion">Alimentación:</label>
-                <input type="number" class="inputGasto" id="alimentacion" placeholder="€">
+                <input type="number" class="inputGasto" id="alimentacion-clon" placeholder="€">
                 <label for="ocio">Ocio:</label>
-                <input type="number" class="inputGasto" id="ocio" placeholder="€">
+                <input type="number" class="inputGasto" id="ocio-clon" placeholder="€">
                 <label for="ahorro">Ahorro:</label>
-                <input type="number" class="inputGasto" id="ahorro" placeholder="€">
+                <input type="number" class="inputGasto" id="ahorro-clon" placeholder="€">
         </div>
     </main>
     <aside>
@@ -67,10 +67,10 @@
                 Resultados
             </h3>
             <ul>
-                <li>En promedio los gastos corresponde a un <span>number</span>% de tu salario</li>
-                <li>El Gasto mas Representativo es <span>gasto</span></li>
-                <li>Hasta el momento has ahorrado <span>number</span></li>
-                <li>Mensualmente ahorras una media de<span>number</span>% de tu salario</li>
+                <li>En promedio los gastos corresponde a un <span id="porcentaje-sueldo">number</span>% de tu salario</li>
+                <li>El Gasto mas Representativo es <span id="mayor-gasto">gasto</span></li>
+                <li>Hasta el momento has ahorrado <span id="total-ahorro">number</span></li>
+                <li>Mensualmente ahorras una media de<span id="promedio-ahorro">number</span>% de tu salario</li>
             </ul>
         </div>
     </aside>

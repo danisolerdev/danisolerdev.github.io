@@ -58,13 +58,13 @@ function crearElementos() {
     // Actualiza el ID de los campos de gasto clonados para que sean únicos
      //clones  
     const inputVivienda = divClone.querySelector('#vivienda-clon');
-    inputVivienda.id = `vivienda-${i}`;
+    inputVivienda.id = `vivienda-${i + 2}`;
     const inputAlimentacion = divClone.querySelector('#alimentacion-clon');
-    inputAlimentacion.id = `alimentacion-${i}`;
+    inputAlimentacion.id = `alimentacion-${i + 2}`;
     const inputOcio = divClone.querySelector('#ocio-clon');
-    inputOcio.id = `ocio-${i}`;
+    inputOcio.id = `ocio-${i + 2}`;
     const inputAhorro = divClone.querySelector('#ahorro-clon');
-    inputAhorro.id = `ahorro-${i}`;
+    inputAhorro.id = `ahorro-${i + 2}`;
 
     // Agrega el clon al contenedor de meses generados
     contenedorMesesGenerados.appendChild(divClone);
